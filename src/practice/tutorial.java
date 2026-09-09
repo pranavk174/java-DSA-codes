@@ -2,6 +2,23 @@ package practice;
 
 public class tutorial {
 
+    public static void occuranceFirstAndLast(String str , char ch){
+
+        int idx = 0;
+        int last = 0;
+        for(int i = 0;i< str.length();i++){
+
+            if(str.charAt(i) == ch && idx == 0){
+                idx = i;
+            }
+           else if(str.charAt(i) == ch){
+                last = i;
+            }
+
+        }
+        System.out.println("First "+ idx);
+         System.out.println("Last "+ last);
+    }
 
     public static int factorial(int n){
 
@@ -84,7 +101,9 @@ public class tutorial {
        int res=  powerN(2,10);
 //        System.out.println(res + " result");
 
+  occuranceFirstAndLast("prerajulizationr", 'r');
+        // towerOfHanoe(5,"source","helper","destination",0);
 
-        towerOfHanoe(5,"source","helper","destination",0);
+      
     }
 }
